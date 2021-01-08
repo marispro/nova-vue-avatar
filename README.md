@@ -21,8 +21,7 @@ class User extends Resource
     public function fields(Request $request)
     {
         return [
-            NovaVueAvatar::make(), // default column name - Avatar, field - Name
-            NovaVueAvatar::make('Avatar', 'Name') // column name - Avatar, field - Name
+            NovaVueAvatar::make('Name', 'Avatar'), // by default field - Name, column name - Avatar (not required parameters)
               ->rounded(false) // disable rounded corners (default: true)
               ->size(), // set avatar size (default: 40)
         ];
