@@ -18,7 +18,7 @@ use Marispro\NovaVueAvatar\NovaVueAvatar;
 
 class User extends Resource
 {
-    public function fields(Request $request)
+    public function fields()
     {
         return [
             NovaVueAvatar::make('Name', 'Avatar'), // by default field - Name, column name - Avatar (not required parameters)
