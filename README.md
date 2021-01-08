@@ -1,1 +1,1 @@
-# nova-vue-avatar
+# Nova Vue Avatar
