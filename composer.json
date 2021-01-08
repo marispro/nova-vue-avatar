@@ -1,6 +1,6 @@
 {
     "name": "marispro/nova-vue-avatar",
-    "description": "A Laravel Nova field.",
+    "description": "Vue Avatar (https://eliep.github.io/vue-avatar/) Field wrapper for Laravel Nova (https://nova.laravel.com/)",
     "keywords": [
         "laravel",
         "nova"
