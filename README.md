@@ -1,6 +1,6 @@
 # Nova Vue Avatar
 
-[Vue Avatar](https://eliep.github.io/vue-avatar/) wrapper for Laravel Nova (https://nova.laravel.com/)
+[Vue Avatar](https://eliep.github.io/vue-avatar/) wrapper for [Laravel Nova](https://nova.laravel.com/)
 
 ![Screenshot](https://maris.pro/img/github/nova-vue-avatars.png "Preview")
 
