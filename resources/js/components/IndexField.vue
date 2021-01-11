@@ -4,7 +4,7 @@
         :rounded="field.rounded"
         :size="field.size"
         :src="field.image"
-        color="#fff"></avatar>
+        :color="field.color"></avatar>
 </template>
 
 <script>
