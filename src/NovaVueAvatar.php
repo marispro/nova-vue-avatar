@@ -59,7 +59,7 @@ class NovaVueAvatar extends Field
             'size' => $value
         ]);
     }
-    
+
     /**
      * Specify the avatar image
      *
@@ -72,20 +72,5 @@ class NovaVueAvatar extends Field
             'value' => '',
             'image' => $value
         ]);
-    }
-
-    /**
-     * Resolve the given attribute from the given resource.
-     *
-     * @param mixed $resource
-     * @param string $attribute
-     * @return mixed
-     */
-    protected function resolveAttribute($resource, $attribute)
-    {
-        if (method_exists($resource, 'getTranslations')) {
-            return $resource->getTranslations($attribute);
-        }
-        return data_get($resource, $attribute);
     }
 }
