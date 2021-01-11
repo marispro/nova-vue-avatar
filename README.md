@@ -24,7 +24,7 @@ class User extends Resource
             NovaVueAvatar::make('Name', 'Avatar'), // by default field - Name, column name - Avatar (optional)
               ->rounded(false) // disable rounded corners (optional, default: true)
               ->size() // set avatar size (optional, default: 40)
-              ->image('https://eliep.github.io/vue-avatar/static/darth-vader.png'), // spacify avatar as image (optional)
+              ->image('https://eliep.github.io/vue-avatar/static/darth-vader.png'), // specify avatar as image (optional)
         ];
     }
 }
