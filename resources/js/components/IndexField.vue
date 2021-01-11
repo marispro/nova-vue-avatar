@@ -3,6 +3,7 @@
         :username="field.value"
         :rounded="field.rounded"
         :size="field.size"
+        :src="field.image"
         color="#fff"></avatar>
 </template>
 
