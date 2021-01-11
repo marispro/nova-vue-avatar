@@ -21,7 +21,7 @@ class NovaVueAvatar extends Field
      * @param null $attribute
      * @param callable|null $resolveCallback
      */
-    public function __construct($attribute = 'name', $name = '', callable $resolveCallback = null)
+    public function __construct($attribute = 'name', $name = 'Avatar', callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
 
@@ -71,6 +71,19 @@ class NovaVueAvatar extends Field
         return $this->withMeta([
             'value' => '',
             'image' => $value
+        ]);
+    }
+
+    /**
+     * Specify text color
+     *
+     * @param  string $value
+     * @return Element
+     */
+    public function color($value = '#fff'): Element
+    {
+        return $this->withMeta([
+            'color' => $value,
         ]);
     }
 }
