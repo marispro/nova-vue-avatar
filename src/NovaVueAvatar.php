@@ -29,6 +29,7 @@ class NovaVueAvatar extends Field
 
         return $this->withMeta([
             'rounded' => true,
+            'image' => '',
             'size' => 40
         ]);
     }
