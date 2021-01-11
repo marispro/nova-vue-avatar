@@ -25,6 +25,7 @@ class User extends Resource
               ->rounded(false) // disable rounded corners (optional, default: true)
               ->size() // set avatar size (optional, default: 40)
               ->image('https://eliep.github.io/vue-avatar/static/darth-vader.png'), // specify avatar as image (optional)
+              ->color('#fff') // specify text color (optional, default: white)
         ];
     }
 }
