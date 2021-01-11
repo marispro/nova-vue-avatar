@@ -21,10 +21,10 @@ class User extends Resource
     public function fields()
     {
         return [
-            NovaVueAvatar::make('Name', 'Avatar'), // by default field - Name, column name - Avatar (not required parameters)
-              ->rounded(false) // disable rounded corners (default: true)
-              ->size() // set avatar size (default: 40)
-              ->image('https://eliep.github.io/vue-avatar/static/darth-vader.png'), // path to the avatar image to display
+            NovaVueAvatar::make('Name', 'Avatar'), // by default field - Name, column name - Avatar (optional)
+              ->rounded(false) // disable rounded corners (optional, default: true)
+              ->size() // set avatar size (optional, default: 40)
+              ->image('https://eliep.github.io/vue-avatar/static/darth-vader.png'), // spacify avatar as image (optional)
         ];
     }
 }
