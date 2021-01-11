@@ -58,6 +58,20 @@ class NovaVueAvatar extends Field
             'size' => $value
         ]);
     }
+    
+    /**
+     * Specify the avatar image
+     *
+     * @param  string $value
+     * @return Element
+     */
+    public function image($value = ''): Element
+    {
+        return $this->withMeta([
+            'value' => '',
+            'image' => $value
+        ]);
+    }
 
     /**
      * Resolve the given attribute from the given resource.
