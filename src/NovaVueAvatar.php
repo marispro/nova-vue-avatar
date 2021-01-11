@@ -21,7 +21,7 @@ class NovaVueAvatar extends Field
      * @param null $attribute
      * @param callable|null $resolveCallback
      */
-    public function __construct($attribute = 'name', $name = 'Avatar', callable $resolveCallback = null)
+    public function __construct($attribute = 'name', $name = '', callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
 
