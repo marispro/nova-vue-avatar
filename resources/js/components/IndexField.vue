@@ -2,7 +2,7 @@
     <avatar
         :username="field.value"
         :rounded="field.rounded"
-        :size="field.size"
+        :size="field.avatar_size"
         :src="field.image"
         :color="field.color"></avatar>
 </template>
