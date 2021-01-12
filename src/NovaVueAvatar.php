@@ -25,12 +25,13 @@ class NovaVueAvatar extends Field
     {
         parent::__construct($name, $attribute, $resolveCallback);
 
-        $this->exceptOnForms();
+        $this->showOnIndex(true);
+        $this->showOnDetail(true);
 
         return $this->withMeta([
             'rounded' => true,
             'image' => '',
-            'size' => 40,
+            'avatar_size' => 40,
             'color' => '#fff'
         ]);
     }
@@ -57,7 +58,7 @@ class NovaVueAvatar extends Field
     public function size($value = true): Element
     {
         return $this->withMeta([
-            'size' => $value
+            'avatar_size' => $value
         ]);
     }
 
