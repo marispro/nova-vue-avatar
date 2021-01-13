@@ -1,4 +1,6 @@
 # Nova Vue Avatar
+[![Latest Version on Github](https://img.shields.io/github/release/marispro/nova-vue-avatar.svg?style=flat-square)](https://packagist.org/packages/marispro/nova-vue-avatar)
+[![Total Downloads](https://img.shields.io/packagist/dt/marispro/nova-vue-avatar.svg?style=flat-square)](https://packagist.org/packages/marispro/nova-vue-avatar)
 
 [Vue Avatar](https://eliep.github.io/vue-avatar/) wrapper for [Laravel Nova](https://nova.laravel.com/)
 
