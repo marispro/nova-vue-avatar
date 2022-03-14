@@ -32,17 +32,18 @@ class NovaVueAvatar extends Field
             'rounded' => true,
             'image' => '',
             'avatar_size' => 40,
-            'color' => '#fff'
+            'color' => '#fff',
+            'backgroundColor' => false
         ]);
     }
 
     /**
      * Specify that the avatar should be rounded
      *
-     * @param  bool $value
+     * @param bool $value
      * @return Element
      */
-    public function rounded($value = true): Element
+    public function rounded(bool $value = true): Element
     {
         return $this->withMeta([
             'rounded' => $value
@@ -68,7 +69,7 @@ class NovaVueAvatar extends Field
      * @param  string $value
      * @return Element
      */
-    public function image($value = ''): Element
+    public function image(string $value = ''): Element
     {
         return $this->withMeta([
             'value' => '',
@@ -82,10 +83,23 @@ class NovaVueAvatar extends Field
      * @param  string $value
      * @return Element
      */
-    public function color($value = '#fff'): Element
+    public function color(string $value = '#fff'): Element
     {
         return $this->withMeta([
             'color' => $value,
+        ]);
+    }
+
+    /**
+     * Specify background
+     *
+     * @param  string $value
+     * @return Element
+     */
+    public function background(string $value): Element
+    {
+        return $this->withMeta([
+            'backgroundColor' => $value,
         ]);
     }
 }
